@@ -52,7 +52,7 @@
 
 			$KnackProductID = get_field( 'knack_product_id', $ProductID );	// Remember, if the product is a New product, this will be empty!
 
-	    	$NewProductPayload->field_1 = $Product->get_name();
+	    		$NewProductPayload->field_1 = $Product->get_name();
 			$NewProductPayload->field_2 = $Product->get_description();
 			$NewProductPayload->field_3 = $Product->get_price();
 			$NewProductPayload->field_4 = wp_get_attachment_url( $Product->get_image_id() );
