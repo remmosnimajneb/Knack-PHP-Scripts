@@ -2,7 +2,7 @@
 /********************************
 * Project: Knack WooCommerce Plugin
 * Description: Sync's WooCommerce Products and Orders with Knack
-* Code Version: 1.0
+* Code Version: 1.1
 * Knack API Version: 1.0
 * Author: Benjamin Sommer - @remmosnimajneb
 * See More: https://github.com/remmosnimajneb/Knack-PHP
@@ -11,6 +11,9 @@
   /*
   * WooCommerce Scripts and Handlers
   */
+
+    /* Set the NameSpace properly */
+        namespace Knack_PHP\WooCommerce_Sync;
 
     /*
     * Function to add a Button to "Sync with Knack" for Product Pages

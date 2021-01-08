@@ -5,6 +5,10 @@
 * Knack API Version: 1.0
 * Author: Benjamin Sommer - @remmosnimajneb
 ***************************************************************************************/
+	
+	/* Set the NameSpace properly */
+		namespace Knack_PHP\WooCommerce_Sync;
+		use Exception;
 
 Class Knack extends Exception {
 

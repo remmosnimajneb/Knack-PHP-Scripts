@@ -1,7 +1,7 @@
 # Knack WooCommerce Plugin
 
 - Project: Knack WooCommerce Plugin
-- Code Version: 1.0
+- Code Version: 1.1
 - Knack API Version: 1.0
 - Author: Benjamin Sommer
 - GitHub: https://github.com/remmosnimajneb
@@ -106,3 +106,7 @@ and The Knack ID Variable (from ACF) is $KnackProductID (IF it's been set).
 
 ## Ok, that's it.
 Remmember, it's not going to be plug and play, but the sky is yours how far you want to take this.
+
+### Changelog
+Version 1.0 - Initial Commit
+Version 1.1 - Added Knack-PHP Wrapper V1.1, Included proper NameSpace

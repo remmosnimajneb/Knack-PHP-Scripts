@@ -2,7 +2,7 @@
 /********************************
 * Project: Knack WooCommerce Plugin
 * Description: Sync's WooCommerce Products and Orders with Knack
-* Code Version: 1.0
+* Code Version: 1.1
 * Knack API Version: 1.0
 * Author: Benjamin Sommer - @remmosnimajneb
 * See More: https://github.com/remmosnimajneb/Knack-PHP
@@ -11,6 +11,10 @@
   /*
   * Knack Configuration
   */
+
+  	/* 0. Set the NameSpace properly */
+		namespace Knack_PHP\WooCommerce_Sync;
+		use \stdClass;
 
 	/* 1. Set Application and API Keys */
 
@@ -52,7 +56,7 @@
 
 			$KnackProductID = get_field( 'knack_product_id', $ProductID );	// Remember, if the product is a New product, this will be empty!
 
-	    		$NewProductPayload->field_1 = $Product->get_name();
+	    	$NewProductPayload->field_1 = $Product->get_name();
 			$NewProductPayload->field_2 = $Product->get_description();
 			$NewProductPayload->field_3 = $Product->get_price();
 			$NewProductPayload->field_4 = wp_get_attachment_url( $Product->get_image_id() );

@@ -2,7 +2,7 @@
 /********************************
 * Project: Knack WooCommerce Plugin
 * Description: Sync's WooCommerce Products and Orders with Knack
-* Code Version: 1.0
+* Code Version: 1.1
 * Knack API Version: 1.0
 * Author: Benjamin Sommer - @remmosnimajneb
 * See More: https://github.com/remmosnimajneb/Knack-PHP
@@ -14,6 +14,9 @@
 	* Read the README.md first, but in short, since we can't update ACF *FROM* WP, we MUST have the Product ID already set.
 	* Assuming that's true, we're going to ASSUME an update, since we can't do much else
 	*/
+
+	/* 0. Set the NameSpace properly */
+		namespace Knack_PHP\WooCommerce_Sync;
 
 	/* 1. Since we are outside WP, we need to load WP */
 
