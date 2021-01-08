@@ -1,7 +1,7 @@
 <?php
 /********************************
 * Project: Knack PHP Wrapper
-* Code Version: 1.0
+* Code Version: 1.1
 * Knack API Version: 1.0
 * Author: Benjamin Sommer - @remmosnimajneb
 ***************************************************************************************/
@@ -62,6 +62,21 @@ Class Knack extends Exception {
 	function CreateUpdateRecord($RequestURL, $Payload, $RequestMethod){
 
 		$Request = $this->SendRequest("CreateUpdate", $RequestURL, json_encode($Payload), $RequestMethod);
+
+		return $Request;
+
+	}
+
+
+	/*
+	* Function to Delete a Record from Knack
+	*
+	* @Param $RequestURL - Object based or View based URL with Record ID to remove
+	* @Return (Array) Array response from Knack, Deleted => 1 means success
+	*/
+	function DeleteRecord($RequestURL){
+
+		$Request = $this->SendRequest("Delete", $RequestURL, "", "DELETE");
 
 		return $Request;
 

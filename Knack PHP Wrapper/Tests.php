@@ -111,3 +111,7 @@
 						$Payload->field_2 = "Something@Something.com";		// Email
 
 						$Records = $Knack->CreateUpdateRecord($RequestURL, $Payload, "PUT");
+
+		/* Delete Record - Object Based, Can be View based */
+			$RequestURL = 'https://api.knack.com/v1/objects/object_1/records/XXXXXXXXXXXXXXXXXXXX';
+			$Records = $Knack->DeleteRecord($RequestURL);

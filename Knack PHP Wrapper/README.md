@@ -1,7 +1,7 @@
 # Knack PHP Wrapper
 
 - Project: Knack PHP Wrapper
-- Code Version: 1.0
+- Code Version: 1.1
 - Knack API Version: 1.0
 - Author: Benjamin Sommer
 - GitHub: https://github.com/remmosnimajneb
@@ -49,4 +49,12 @@ The code is pretty documented:
 
 				$Records = $Knack->CreateUpdateRecord($RequestURL, $Payload, "POST");
 
+	// Delete Record - Object Based, Can be View based
+			$RequestURL = 'https://api.knack.com/v1/objects/object_1/records/XXXXXXXXXXXXXXXXXXXX';
+			$Records = $Knack->DeleteRecord($RequestURL);
+
 More samples are inside the Tests.php file so see that for more details.
+
+### Changelog
+- Version 1.0 - Inital Commit
+- Version 1.1 - Added Delete Record Function (Object and View based)
